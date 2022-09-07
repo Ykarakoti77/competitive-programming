@@ -1,1 +1,1 @@
-# DataStructure-Algorithm-
+# Competitive Programming Template-
