@@ -1,1 +1,1 @@
-# Competitive Programming Template-
+Library of algorithms used in competitive programmning.
