@@ -1,1 +1,1 @@
-Library of algorithms used in competitive programmning.
+Library of algorithms used in competitive programming.
