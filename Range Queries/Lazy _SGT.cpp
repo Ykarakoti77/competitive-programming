@@ -120,11 +120,22 @@ struct Update1{
 };
 
 void solve(){
-	vector<ll> arr = {100, 3, 5, 2, 6, 9};
-	LazySGT<Node1, Update1> lazy = LazySGT<Node1, Update1>(6, arr);
-	cout << lazy.make_query(0, 5).val << '\n';
-	lazy.make_update(3, 4, 1);
-	cout << lazy.make_query(0, 5).val << '\n';  
+	ll n, m;
+	cin >> n >> m;
+	vector<ll> v(n, 0);
+	LazySGT<Node1, Update1> sg = LazySGT<Node1, Update1>(n, v);
+	for(ll i = 0; i < m; i++){
+		ll t, a ,b, c;
+		cin >> t;
+		if(t == 1){
+			cin >> a >> b >> c;
+			sg.make_update(a, b-1, c);
+		}
+		else{
+			cin >> a >> b;
+			cout << sg.make_query(a, b-1).val << '\n';
+		}
+	}
 }
 
 int main(){
