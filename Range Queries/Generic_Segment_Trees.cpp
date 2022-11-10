@@ -90,11 +90,22 @@ struct Update1 {
 };
 
 void solve(){
-	vector<ll> arr = {3, 20, 33, 0, 44, 55};
-	SegTree<Node1, Update1> sg1 = SegTree<Node1, Update1>(6, arr);
-	cout << sg1.make_query(0, 5).val << '\n';
-	sg1.make_update(3, 4);
-	cout << sg1.make_query(0, 5).val << '\n';
+	ll n, m;
+	cin >> n >> m;
+	vector<ll> v(n, 0);
+	SegTree<Node1, Update1> sg = SegTree<Node1, Update1>(n, v);
+	for(ll i = 0; i < m; i++){
+		ll t, a, c;
+		cin >> t;
+		if(t == 1){
+			cin >> a >> c;
+			sg.make_update(a, c);
+		}
+		else{
+			cin >> a >> c;
+			cout << sg.make_query(a, c).val << '\n';
+		}
+	}
 }
 
 int main(){
