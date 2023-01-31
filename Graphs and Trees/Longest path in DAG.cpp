@@ -72,3 +72,12 @@ int main() {
 	}
 	return 0;
 }
+
+/*
+code for this problem https://codeforces.com/contest/1572/problem/A
+
+Idea : 
+if the graph is cyclic then no answer was possible 
+if if was DAG then longest path in the DAG was our answer
+
+*/
