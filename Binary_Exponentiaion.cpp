@@ -20,6 +20,7 @@ void facto(ll n) {
 	}
 }
 // we can also precompute inverse rather then computing it when using nCr
+// inverse(n) is used to calculate inverse of n!
 void inverse(ll n) {
 	inv[0] = 1;
 	inv[n] = binpow(fact[n], M - 2);
