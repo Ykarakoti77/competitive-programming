@@ -1,1 +1,1 @@
-Optimised Algorithms that are frequently used in Competitive Programming
+Algorithms for competitive programming.
