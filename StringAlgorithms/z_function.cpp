@@ -56,7 +56,8 @@ void solve()
     string t = s.substr(na[0]);
     vector<ll> z = z_function(t);
     ll ans = 0;
-    ll ni = t.length();
+    i
+        ll ni = t.length();
     for (ll len = 1; len <= ni; len++)
     {
         ll ca = na[0];
