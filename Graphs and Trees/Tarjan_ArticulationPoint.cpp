@@ -45,7 +45,7 @@ void dfs(ll v, ll p = -1) {
         IS_CUTPOINT(v);
 }
 
-void find_cut_pointspolls() {
+void find_cut_points() {
     timer = 0;
     visited.assign(n, false);
     tin.assign(n, -1);
